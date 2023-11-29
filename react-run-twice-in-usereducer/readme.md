@@ -64,7 +64,7 @@ const Example = () => {
 
 ### 說明
 App.js 基本上是按照官方的文件來實作 `context + reducer` 的跨元件狀態管理：[Scaling Up with Reducer and Context](https://react.dev/learn/scaling-up-with-reducer-and-context)  
-在這裡定義了 `context` 與 `reducer` 並且把 `dispatch` 與 `state` 存在 `Context.Provider`，如此一來在其他元間裡面用 `uesContext` 就可以透過更新狀態了。  
+在這裡定義了 `context` 與 `reducer` 並且把 `dispatch` 與 `state` 存在 `Context.Provider`，如此一來在其他元件中用 `uesContext` 就可以更新狀態了。  
 這邊定義了一個動作 `increase`，點擊按鈕之後會讓 `state` 值 +1。  
 實際上在運作時，`debugger` 被執行了 2 次，也印出了 2 次 "run"。
 ![run twice](./images/1.png)
